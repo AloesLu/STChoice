@@ -1,0 +1,16 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '7.0'
+
+pod 'AFNetworking', ‘2.5.0’
+pod 'SDWebImage', '3.7.3’
+pod 'MBProgressHUD', '0.9.1'
+pod 'POP+MCAnimate', '2.0.1'
+pod 'TPKeyboardAvoiding', '~> 1.2.9'
+pod 'BlocksKit', '~> 2.2.5'
+pod 'Masonry', '~> 0.6.2'
+pod 'RegexKitLite-NoWarning', '~> 1.1.0'
+pod 'JSONKit', '~> 1.5pre'
+pod 'MJRefresh', '~> 2.4.8'
+pod 'hpple', '0.2.0'
+pod 'ReactiveCocoa'
+pod 'RZDataBinding'

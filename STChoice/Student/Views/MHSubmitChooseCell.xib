@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="m9g-On-jU6">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="m9g-On-jU6" id="Cyd-MY-Yq6">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="张帅" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zQK-OQ-iiq">
+                        <rect key="frame" x="91" y="14" width="28" height="17"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="第一志愿" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oha-pg-3Ut">
+                        <rect key="frame" x="20" y="14" width="56" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GuH-sc-du9" customClass="CustomButton">
+                        <rect key="frame" x="305" y="10" width="50" height="25"/>
+                        <color key="backgroundColor" red="0.97647058819999999" green="0.74509803919999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="Dlj-nO-jVp"/>
+                            <constraint firstAttribute="height" constant="25" id="deF-X7-khx"/>
+                        </constraints>
+                        <state key="normal" title="上移">
+                            <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="教授" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tnX-K7-v1a">
+                        <rect key="frame" x="134" y="14" width="28" height="17"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="zQK-OQ-iiq" firstAttribute="leading" secondItem="oha-pg-3Ut" secondAttribute="trailing" constant="15" id="IqU-0k-fo4"/>
+                    <constraint firstItem="zQK-OQ-iiq" firstAttribute="centerY" secondItem="oha-pg-3Ut" secondAttribute="centerY" id="Lni-1M-Nmd"/>
+                    <constraint firstItem="oha-pg-3Ut" firstAttribute="leading" secondItem="Cyd-MY-Yq6" secondAttribute="leading" constant="20" id="Z6a-Xs-8PB"/>
+                    <constraint firstItem="tnX-K7-v1a" firstAttribute="centerY" secondItem="zQK-OQ-iiq" secondAttribute="centerY" id="lGZ-4O-L8C"/>
+                    <constraint firstItem="GuH-sc-du9" firstAttribute="centerY" secondItem="tnX-K7-v1a" secondAttribute="centerY" id="uCe-cZ-Mze"/>
+                    <constraint firstItem="oha-pg-3Ut" firstAttribute="centerY" secondItem="Cyd-MY-Yq6" secondAttribute="centerY" id="vSf-aN-UE4"/>
+                    <constraint firstItem="tnX-K7-v1a" firstAttribute="leading" secondItem="zQK-OQ-iiq" secondAttribute="trailing" constant="15" id="wow-uY-VoL"/>
+                    <constraint firstAttribute="trailing" secondItem="GuH-sc-du9" secondAttribute="trailing" constant="20" id="yOh-BT-ylZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="359.5" y="389"/>
+        </tableViewCell>
+    </objects>
+</document>

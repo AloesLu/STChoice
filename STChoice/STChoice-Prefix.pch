@@ -1,0 +1,204 @@
+//
+//  STChoice-Prefix.pch
+//  STChoice
+//
+//  Created by AloesLu on 16/4/11.
+//  Copyright © 2016年 AloesLu. All rights reserved.
+//
+
+#ifndef STChoice_Prefix_pch
+#define STChoice_Prefix_pch
+
+#ifdef __OBJC__
+#import <AssetsLibrary/AssetsLibrary.h>
+#import <Photos/Photos.h>
+
+#import <ReactiveCocoa/ReactiveCocoa.h>
+#import <ReactiveCocoa/RACEXTScope.h>
+#import <RZDataBinding/RZDataBinding.h>
+#import <BlocksKit/BlocksKit+UIKit.h>
+#import <Masonry/Masonry.h>
+#import <MBProgressHUD/MBProgressHUD.h>
+#import "UIImageView+MJWebCache.h"
+#import <RegexKitLite-NoWarning/RegexKitLite.h>
+#import <JSONKit/JSONKit.h>
+#import <MJRefresh/MJRefresh.h>
+
+//#import "MHAPI.h"
+//#import "Configure.h"
+#import "MHGlobalFunction.h"
+#import "CustomButton.h"
+#import "UITapImageView.h"
+
+#import "MHUser.h"
+#import "MHUserManager.h"
+#import "MHTeacherManager.h"
+#import "MHStudentManager.h"
+#import "MHAdminManager.h"
+#import "MHBaseNavigationController.h"
+#import "BaseViewController.h"
+#import "ST_NetAPIManager.h"
+
+#import "NSDictionary+NSNullToNil.h"
+#import "NSDate+convenience.h"
+#import "NSDate+Common.h"
+#import "NSString+Common.h"
+#import "UIImage+Common.h"
+#import "UIColor+expanded.h"
+#import "NSObject+Common.h"
+#import "UIView+Common.h"
+#import "UIActionSheet+Common.h"
+
+#import "AppDelegate.h"
+#import "MHStudent.h"
+#import "MHTeacher.h"
+
+#endif
+
+#endif /* STChoice_Prefix_pch */
+
+#define appMHDelegate ((AppDelegate *)[[UIApplication sharedApplication] delegate])
+
+//NSUserDefaults 存储关键词
+//该版本是否第一次使用
+#define kIsFirstLogin @"IsFirstLogin"
+//是否提示设置定位服务
+#define kIsTipSetLocation @"IsTipSetLocation"
+
+
+//友盟appkey
+#define kUMengAppKey @"5608e9dbe0f55ab2c3001ee4"
+
+//高德地图appkey
+#define kAMapAppKey @"5198939cef32c84a5f3fc7a7d28ab3a7"
+
+//公钥
+#define kPwdWord @"c4c081c26b4874b0"
+//页条数
+#define KPageSize @"20"
+
+//梦虎团队云账号
+#define kDTOpenAccountId @"4398046961754"
+
+//自定义conversion
+#define kMessageInfoPraise @"ywcustomPraise717"
+#define kMessageInfoReply @"ywcustomReply717"
+#define kMessageInfoDTTeam @"ywcustomDTTeam717"
+
+//阿里百川AppKey
+#define kALiBaiChuanAppKey @"23238460"
+
+//活动投票typeCode
+#define kActivityVoteTypeCode @"30000007"
+
+//测试地址
+#define kBaseUrlStr_Test @"http://192.168.1.47:8181/"
+//生产地址
+#define kBaseUrlStr_Product @"http://121.42.208.200:8080/jfinal_demo_for_jsp/"
+
+//appStore地址
+#define kAppUrl  @"http://itunes.apple.com/app/id923676989"
+#define kAppReviewURL   @"itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=923676989"
+
+//版本号
+#define kVersion_Vomoho [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"]
+#define kVersionBuild_Vomoho [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleVersion"]
+
+
+//设备类型判断
+#define kDevice_Is_iPhone4 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 960), [[UIScreen mainScreen] currentMode].size) : NO)
+#define kDevice_Is_iPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+#define kDevice_Is_iPhone6 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(750, 1334), [[UIScreen mainScreen] currentMode].size) : NO)
+#define kDevice_Is_iPhone6Plus ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size) : NO)
+//设备尺寸信息
+#define kKeyWindow [UIApplication sharedApplication].keyWindow
+#define kScreen_Bounds [UIScreen mainScreen].bounds
+#define kScreen_Height [UIScreen mainScreen].bounds.size.height
+#define kScreen_Width [UIScreen mainScreen].bounds.size.width
+#define kHeightRate ([[UIScreen mainScreen] bounds].size.height /667.0 > 500.0/667.0 ? [[UIScreen mainScreen] bounds].size.height /667.0 :568.0/667.0)
+#define kWidthRate ([[UIScreen mainScreen] bounds].size.width /375.0)
+
+//相关头像尺寸
+#define kAvatar25 30.0
+#define kAvatar40 40.0
+#define kAvatar70 70.0
+
+//相关默认图片
+#define kDefaultImage25X25 [UIImage imageNamed:@"kDefaultImage25"]
+#define kDefaultImage60X60 [UIImage imageNamed:@"kDefaultImgae60"]
+#define kDefaultImage80X80 [UIImage imageNamed:@"kDefaultImage80"]
+#define kDefaultImage350X185 [UIImage imageNamed:@"kDefaultImage351"]
+#define kDefaultImage375X667 [UIImage imageNamed:@"kDefaultImgae375w667h"]
+
+//iconfont 相关定义
+#define kPraiseButton0 @"\U0000e643"
+#define kPraiseButton1 @"\U0000e644"
+#define kReplyButton0 @"\U0000e60a"
+#define kReplyButton1 @"\U0000e60a"
+#define kVisitButton @"\U0000e609"
+
+#define kDTMoney @"\U0000e611"
+
+//颜色定义
+
+//梦虎柠檬黄(主色)
+#define kMainColor [UIColor colorWithHexString:@"0xFEDB43"]//[UIColor colorWithRed:254.0/255.0 green:219.0/255.0 blue:67.0/255.0 alpha:1.0]
+#define kMainColorPress [UIColor colorWithHexString:@"0xFEDB43" andAlpha:0.8]
+//梦虎辅助色
+#define kMainColorIcon [UIColor colorWithHexString:@"0xF9BE00"]//[UIColor colorWithRed:249.0/255.0 green:190.0/255.0 blue:0.0 alpha:1.0]
+#define kMainColorIconPress [UIColor colorWithHexString:@"0xF9BE00" andAlpha:0.8]
+//梦虎橘色
+#define kAssistantColor [UIColor colorWithHexString:@"0xF67B31"]//[UIColor colorWithRed:246.0/255.0 green:123.0/255.0 blue:49.0/255.0 alpha:1.0]
+#define kAssistantColorPress [UIColor colorWithHexString:@"0xF67B31" andAlpha:0.8]
+
+#define kTitleColor [UIColor colorWithHexString:@"0x333333"]
+#define kTitleColorPress [UIColor colorWithHexString:@"0x333333" andAlpha:0.2]
+#define kLeadColor [UIColor colorWithHexString:@"0x666666"]
+#define kLeadColorPress [UIColor colorWithHexString:@"0x666666" andAlpha:0.2]
+#define kWeakTextColor [UIColor colorWithHexString:@"0x999999"]
+#define kWeakTextColorPress [UIColor colorWithHexString:@"0x666666" andAlpha:0.2]
+#define kDescribeColor [UIColor colorWithHexString:@"0xcccccc"]
+#define kDescribeColorPress [UIColor colorWithHexString:@"0xcccccc" andAlpha:0.8]
+#define kBorderLine [UIColor colorWithHexString:@"0xeeeeee"]
+#define kSeparatorColor [UIColor colorWithHexString:@"0xe5e5e5"]
+#define kBGColor [UIColor colorWithHexString:@"0xf6f7f8"]
+
+//梦虎蓝
+#define kMHManBule [UIColor colorWithRed:67.0/255.0 green:196.0/255.0 blue:254.0/255.0 alpha:1.0]//[UIColor colorWithHexString:@"0x43c4fe"]
+#define kMHManBulePress [UIColor colorWithRed:67.0/255.0 green:196.0/255.0 blue:254.0/255.0 alpha:0.8]
+//梦虎粉
+#define kMHGirlPink [UIColor colorWithRed:255.0/255.0 green:99.0/255.0 blue:162.0/255.0 alpha:1.0]//[UIColor colorWithHexString:@"0xff63a2"]
+#define kMHGirlPinkPress [UIColor colorWithRed:255.0/255.0 green:99.0/255.0 blue:162.0/255.0 alpha:0.8]
+//梦虎绿
+#define kMHGreenColor [UIColor colorWithRed:47.0/255.0 green:195.0/255.0 blue:81.0/255.0 alpha:1.0]//[UIColor colorWithHexString:@"0x2fc351"]
+#define kMHGreenColorPress [UIColor colorWithRed:47.0/255.0 green:195.0/255.0 blue:81.0/255.0 alpha:0.8]
+//梦虎红
+#define kMHRedColor [UIColor colorWithRed:251.0/255.0 green:42.0/255.0 blue:53.0/255.0 alpha:1.0]//[UIColor colorWithHexString:@"0xfb2a35"]
+#define kMHRedColorPress [UIColor colorWithRed:251.0/255.0 green:42.0/255.0 blue:53.0/255.0 alpha:0.8]
+
+#define kInputBGColor [UIColor colorWithRed:238.0/255.0 green:238.0/255.0 blue:238.0/255.0 alpha:0.95]
+
+#define kCommunityTag [UIColor colorWithRed:204.0/255.0 green:204.0/255.0 blue:204.0/255.0 alpha:1.0]
+
+#define kRefeshColor [UIColor colorWithRed:80.0/255 green:227.0/255 blue:194.0/255.0 alpha:1.0];
+
+#define kColor999 [UIColor colorWithHexString:@"0x999999"]
+#define kColorTableBG [UIColor colorWithHexString:@"0xfafafa"]
+#define kColorTableSectionBg [UIColor colorWithHexString:@"0xeeeeee"]
+
+#define DebugLog(s, ...) NSLog(@"%s(%d): %@", __FUNCTION__, __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__])
+#define kTipAlert(_S_, ...)     [[[UIAlertView alloc] initWithTitle:[NSString stringWithFormat:(_S_), ##__VA_ARGS__] message:nil delegate:nil cancelButtonTitle:@"好" otherButtonTitles:nil] show]
+
+#define  kBadgeTipStr @"badgeTip"
+#define  kBackButtonFontSize 16
+#define  kNavTitleFontSize 18
+
+#define ESWeak(var, weakVar) __weak __typeof(&*var) weakVar = var
+#define ESStrong_DoNotCheckNil(weakVar, _var) __typeof(&*weakVar) _var = weakVar
+#define ESStrong(weakVar, _var) ESStrong_DoNotCheckNil(weakVar, _var); if (!_var) return;
+#define ESWeak_(var) ESWeak(var, weak_##var);
+#define ESStrong_(var) ESStrong(weak_##var, _##var);
+/** defines a weak `self` named `__weakSelf` */
+#define ESWeakSelf      ESWeak(self, __weakSelf);
+/** defines a strong `self` named `_self` from `__weakSelf` */
+#define ESStrongSelf    ESStrong(__weakSelf, _self);

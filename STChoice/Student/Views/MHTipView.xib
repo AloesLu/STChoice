@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="xe3-Al-DJb">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xe3-Al-DJb" id="roo-Av-MgB">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lUY-cZ-b1C">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="717" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="提示：发布违法、反动相关活动或者冒用他人、组织名义发起活动，将依据记录提示公安相关处理" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9uX-qs-4a3">
+                                <rect key="frame" x="15" y="7" width="345" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="oSr-K8-25v"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.96470588239999999" green="0.4823529412" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.93725490199999995" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="9uX-qs-4a3" firstAttribute="leading" secondItem="lUY-cZ-b1C" secondAttribute="leading" constant="15" id="BkZ-P9-vWm"/>
+                            <constraint firstAttribute="trailing" secondItem="9uX-qs-4a3" secondAttribute="trailing" constant="15" id="jHQ-0y-N8y"/>
+                            <constraint firstAttribute="height" constant="44" id="qgR-fW-EIE"/>
+                            <constraint firstItem="9uX-qs-4a3" firstAttribute="centerY" secondItem="lUY-cZ-b1C" secondAttribute="centerY" id="ux3-kb-JZb"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="lUY-cZ-b1C" firstAttribute="top" secondItem="roo-Av-MgB" secondAttribute="top" id="KTQ-CU-zBQ"/>
+                    <constraint firstAttribute="trailing" secondItem="lUY-cZ-b1C" secondAttribute="trailing" id="Nsb-d5-0OP"/>
+                    <constraint firstItem="lUY-cZ-b1C" firstAttribute="leading" secondItem="roo-Av-MgB" secondAttribute="leading" id="yZn-UM-7bs"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="1" green="0.93725490199999995" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
+            <point key="canvasLocation" x="307.5" y="365"/>
+        </tableViewCell>
+    </objects>
+</document>

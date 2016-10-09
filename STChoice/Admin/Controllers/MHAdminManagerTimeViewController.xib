@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MHAdminManagerTimeViewController">
+            <connections>
+                <outlet property="adminTimeButton" destination="Hrp-1c-mA3" id="Eoy-FI-zjW"/>
+                <outlet property="adminTimeLabel" destination="ZtZ-qQ-yRE" id="iqV-jS-z8A"/>
+                <outlet property="studentTimeButton" destination="TRc-iY-8it" id="Jig-5Y-YVf"/>
+                <outlet property="studentTimeLabel" destination="TD7-X6-Hp4" id="aaJ-6g-Tlj"/>
+                <outlet property="teacher1TimeButton" destination="XD8-tJ-RUb" id="lC8-St-YeD"/>
+                <outlet property="teacher2TimeButton" destination="gYd-BV-WeC" id="4eh-zk-WRo"/>
+                <outlet property="teacher3TimeButton" destination="IP7-1Y-Jas" id="Kbf-fm-Jcj"/>
+                <outlet property="teacherTime1Label" destination="OdI-I6-YMi" id="6ky-dP-lvf"/>
+                <outlet property="teacherTime2Label" destination="tpe-UX-Y24" id="hxo-fW-ELY"/>
+                <outlet property="teacherTime3Label" destination="716-Af-6ep" id="EA2-cN-l2a"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pXf-t3-syA">
+                    <rect key="frame" x="0.0" y="84" width="320" height="90"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="学生填写志愿时间：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HhZ-Ae-yoe">
+                            <rect key="frame" x="15" y="10" width="126" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2016-04-24 12:00--2016-04-25 12:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TD7-X6-Hp4">
+                            <rect key="frame" x="15" y="37" width="220" height="15"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TRc-iY-8it">
+                            <rect key="frame" x="259" y="62" width="46" height="23"/>
+                            <color key="backgroundColor" red="0.97647058819999999" green="0.74509803919999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="46" id="3pV-B1-jpr"/>
+                                <constraint firstAttribute="height" constant="23" id="wv0-Qy-One"/>
+                            </constraints>
+                            <state key="normal" title="开始">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="studentTimeAction:" destination="-1" eventType="touchUpInside" id="OSY-An-Ost"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="TD7-X6-Hp4" firstAttribute="leading" secondItem="pXf-t3-syA" secondAttribute="leading" constant="15" id="8wZ-ce-OmT"/>
+                        <constraint firstAttribute="trailing" secondItem="TRc-iY-8it" secondAttribute="trailing" constant="15" id="EvX-K7-VYe"/>
+                        <constraint firstItem="HhZ-Ae-yoe" firstAttribute="leading" secondItem="pXf-t3-syA" secondAttribute="leading" constant="15" id="RLS-sE-SQO"/>
+                        <constraint firstItem="TD7-X6-Hp4" firstAttribute="top" secondItem="HhZ-Ae-yoe" secondAttribute="bottom" constant="10" id="a0W-yS-OfJ"/>
+                        <constraint firstAttribute="bottom" secondItem="TRc-iY-8it" secondAttribute="bottom" constant="5" id="fhb-dP-Osp"/>
+                        <constraint firstItem="HhZ-Ae-yoe" firstAttribute="top" secondItem="pXf-t3-syA" secondAttribute="top" constant="10" id="j9t-gg-swm"/>
+                        <constraint firstAttribute="height" constant="90" id="mOG-T4-Y2a"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o6k-jW-gPT">
+                    <rect key="frame" x="0.0" y="174" width="320" height="80"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="教师第一轮时间段：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TSW-mr-1hH">
+                            <rect key="frame" x="15" y="0.0" width="126" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2016-04-24 12:00--2016-04-25 12:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OdI-I6-YMi">
+                            <rect key="frame" x="15" y="27" width="220" height="15"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XD8-tJ-RUb">
+                            <rect key="frame" x="259" y="52" width="46" height="23"/>
+                            <color key="backgroundColor" red="0.97647058819999999" green="0.74509803919999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="46" id="dFG-PP-VCO"/>
+                                <constraint firstAttribute="height" constant="23" id="npi-LE-bM9"/>
+                            </constraints>
+                            <state key="normal" title="开始">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="teacher1TimeAction:" destination="-1" eventType="touchUpInside" id="RPp-av-P7C"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="XD8-tJ-RUb" secondAttribute="trailing" constant="15" id="3uc-dc-2YF"/>
+                        <constraint firstItem="OdI-I6-YMi" firstAttribute="top" secondItem="TSW-mr-1hH" secondAttribute="bottom" constant="10" id="AoK-nW-5wp"/>
+                        <constraint firstAttribute="bottom" secondItem="XD8-tJ-RUb" secondAttribute="bottom" constant="5" id="Rn7-dN-DK8"/>
+                        <constraint firstItem="TSW-mr-1hH" firstAttribute="leading" secondItem="o6k-jW-gPT" secondAttribute="leading" constant="15" id="eDE-1H-0Zn"/>
+                        <constraint firstItem="OdI-I6-YMi" firstAttribute="leading" secondItem="o6k-jW-gPT" secondAttribute="leading" constant="15" id="ge3-Vi-mwp"/>
+                        <constraint firstItem="TSW-mr-1hH" firstAttribute="top" secondItem="o6k-jW-gPT" secondAttribute="top" id="p0B-kY-jTS"/>
+                        <constraint firstAttribute="height" constant="80" id="yTF-2z-j6H"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="abb-LZ-QX5">
+                    <rect key="frame" x="0.0" y="254" width="320" height="80"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="教师第二轮时间段：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Mu-do-WSP">
+                            <rect key="frame" x="15" y="0.0" width="126" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2016-04-24 12:00--2016-04-25 12:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tpe-UX-Y24">
+                            <rect key="frame" x="15" y="27" width="220" height="15"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gYd-BV-WeC">
+                            <rect key="frame" x="259" y="52" width="46" height="23"/>
+                            <color key="backgroundColor" red="0.97647058819999999" green="0.74509803919999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="23" id="feG-fZ-cbH"/>
+                                <constraint firstAttribute="width" constant="46" id="q3o-rl-j4o"/>
+                            </constraints>
+                            <state key="normal" title="开始">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="teacher2TimeAction:" destination="-1" eventType="touchUpInside" id="TcB-1g-JdW"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="tpe-UX-Y24" firstAttribute="leading" secondItem="abb-LZ-QX5" secondAttribute="leading" constant="15" id="1Hu-5H-PsA"/>
+                        <constraint firstAttribute="bottom" secondItem="gYd-BV-WeC" secondAttribute="bottom" constant="5" id="EQ2-Cj-E4M"/>
+                        <constraint firstAttribute="height" constant="80" id="FCt-yH-1Gp"/>
+                        <constraint firstAttribute="trailing" secondItem="gYd-BV-WeC" secondAttribute="trailing" constant="15" id="Kly-Sl-RYJ"/>
+                        <constraint firstItem="7Mu-do-WSP" firstAttribute="leading" secondItem="abb-LZ-QX5" secondAttribute="leading" constant="15" id="MZK-ft-SDT"/>
+                        <constraint firstItem="7Mu-do-WSP" firstAttribute="top" secondItem="abb-LZ-QX5" secondAttribute="top" id="Rja-3a-eYz"/>
+                        <constraint firstItem="tpe-UX-Y24" firstAttribute="top" secondItem="7Mu-do-WSP" secondAttribute="bottom" constant="10" id="w2g-94-PfN"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hbB-RG-sX6">
+                    <rect key="frame" x="0.0" y="334" width="320" height="80"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="教师第三轮时间段：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BkM-ep-YkH">
+                            <rect key="frame" x="15" y="0.0" width="126" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2016-04-24 12:00--2016-04-25 12:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="716-Af-6ep">
+                            <rect key="frame" x="15" y="27" width="220" height="15"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IP7-1Y-Jas">
+                            <rect key="frame" x="259" y="52" width="46" height="23"/>
+                            <color key="backgroundColor" red="0.97647058819999999" green="0.74509803919999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="46" id="Mz4-sS-XCV"/>
+                                <constraint firstAttribute="height" constant="23" id="vtE-Oo-3Vu"/>
+                            </constraints>
+                            <state key="normal" title="开始">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="teacher3TimeAction:" destination="-1" eventType="touchUpInside" id="8Fi-P1-gfp"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="716-Af-6ep" firstAttribute="leading" secondItem="hbB-RG-sX6" secondAttribute="leading" constant="15" id="5br-OJ-c9d"/>
+                        <constraint firstAttribute="trailing" secondItem="IP7-1Y-Jas" secondAttribute="trailing" constant="15" id="B5y-K7-mBU"/>
+                        <constraint firstAttribute="height" constant="80" id="Y3W-ov-zsY"/>
+                        <constraint firstItem="BkM-ep-YkH" firstAttribute="top" secondItem="hbB-RG-sX6" secondAttribute="top" id="hYH-Gy-KGJ"/>
+                        <constraint firstItem="716-Af-6ep" firstAttribute="top" secondItem="BkM-ep-YkH" secondAttribute="bottom" constant="10" id="nXd-Dp-H36"/>
+                        <constraint firstItem="BkM-ep-YkH" firstAttribute="leading" secondItem="hbB-RG-sX6" secondAttribute="leading" constant="15" id="tAH-Rm-k7a"/>
+                        <constraint firstAttribute="bottom" secondItem="IP7-1Y-Jas" secondAttribute="bottom" constant="5" id="yUy-Fz-agd"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Opp-K8-wty">
+                    <rect key="frame" x="0.0" y="414" width="320" height="80"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="随机分配时间段" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sQ9-RB-HLm">
+                            <rect key="frame" x="15" y="0.0" width="98" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2016-04-24 12:00--2016-04-25 12:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZtZ-qQ-yRE">
+                            <rect key="frame" x="15" y="27" width="220" height="15"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hrp-1c-mA3">
+                            <rect key="frame" x="259" y="52" width="46" height="23"/>
+                            <color key="backgroundColor" red="0.97647058819999999" green="0.74509803919999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="23" id="Fef-OT-x5R"/>
+                                <constraint firstAttribute="width" constant="46" id="Ze6-9r-rqh"/>
+                            </constraints>
+                            <state key="normal" title="开始">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="adminTimeAction:" destination="-1" eventType="touchUpInside" id="Cob-wx-7b3"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="G9i-6n-jBw"/>
+                        <constraint firstItem="sQ9-RB-HLm" firstAttribute="leading" secondItem="Opp-K8-wty" secondAttribute="leading" constant="15" id="II5-tI-zEa"/>
+                        <constraint firstAttribute="trailing" secondItem="Hrp-1c-mA3" secondAttribute="trailing" constant="15" id="LvR-fS-9d7"/>
+                        <constraint firstAttribute="bottom" secondItem="Hrp-1c-mA3" secondAttribute="bottom" constant="5" id="ReX-0U-dtD"/>
+                        <constraint firstItem="ZtZ-qQ-yRE" firstAttribute="leading" secondItem="Opp-K8-wty" secondAttribute="leading" constant="15" id="bLx-Oh-WSp"/>
+                        <constraint firstItem="ZtZ-qQ-yRE" firstAttribute="top" secondItem="sQ9-RB-HLm" secondAttribute="bottom" constant="10" id="hSV-ND-mnY"/>
+                        <constraint firstItem="sQ9-RB-HLm" firstAttribute="top" secondItem="Opp-K8-wty" secondAttribute="top" id="j14-Af-rTE"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="hbB-RG-sX6" secondAttribute="trailing" id="7rY-sx-ZdY"/>
+                <constraint firstItem="pXf-t3-syA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="9g7-gV-VSw"/>
+                <constraint firstAttribute="trailing" secondItem="Opp-K8-wty" secondAttribute="trailing" id="AnM-YE-bOW"/>
+                <constraint firstItem="o6k-jW-gPT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Gmt-Hc-1Cr"/>
+                <constraint firstItem="Opp-K8-wty" firstAttribute="top" secondItem="hbB-RG-sX6" secondAttribute="bottom" id="KWd-dg-TEo"/>
+                <constraint firstItem="Opp-K8-wty" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="LiD-p2-WSJ"/>
+                <constraint firstItem="abb-LZ-QX5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Uhf-MS-mmQ"/>
+                <constraint firstItem="abb-LZ-QX5" firstAttribute="top" secondItem="o6k-jW-gPT" secondAttribute="bottom" id="Xtm-XN-fJV"/>
+                <constraint firstItem="pXf-t3-syA" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="84" id="cCs-WT-CV5"/>
+                <constraint firstItem="o6k-jW-gPT" firstAttribute="top" secondItem="pXf-t3-syA" secondAttribute="bottom" id="g9x-QP-7pb"/>
+                <constraint firstAttribute="trailing" secondItem="o6k-jW-gPT" secondAttribute="trailing" id="i0I-cl-pdW"/>
+                <constraint firstItem="hbB-RG-sX6" firstAttribute="top" secondItem="abb-LZ-QX5" secondAttribute="bottom" id="ksB-bz-pZa"/>
+                <constraint firstItem="hbB-RG-sX6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="oeB-Mf-FdU"/>
+                <constraint firstAttribute="trailing" secondItem="pXf-t3-syA" secondAttribute="trailing" id="ojq-y5-Z5s"/>
+                <constraint firstAttribute="trailing" secondItem="abb-LZ-QX5" secondAttribute="trailing" id="rNB-7B-E4B"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="251" y="429"/>
+        </view>
+    </objects>
+</document>

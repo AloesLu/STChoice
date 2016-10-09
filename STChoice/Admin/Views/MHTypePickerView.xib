@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MHDatePickerView"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MHDatePickerView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <pickerView tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nOp-Jx-z58">
+                    <rect key="frame" x="0.0" y="20" width="375" height="216"/>
+                </pickerView>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lrj-4C-wKx">
+                    <rect key="frame" x="20" y="246" width="163" height="34"/>
+                    <state key="normal" title="确定">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QON-EY-nyQ">
+                    <rect key="frame" x="193" y="246" width="162" height="34"/>
+                    <state key="normal" title="取消">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="nOp-Jx-z58" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="1TF-dB-eXX"/>
+                <constraint firstItem="lrj-4C-wKx" firstAttribute="height" secondItem="QON-EY-nyQ" secondAttribute="height" id="4S6-7h-ePN"/>
+                <constraint firstItem="lrj-4C-wKx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="4ZD-1y-fk1"/>
+                <constraint firstItem="QON-EY-nyQ" firstAttribute="leading" secondItem="lrj-4C-wKx" secondAttribute="trailing" constant="10" id="Lb8-a3-wOH"/>
+                <constraint firstItem="nOp-Jx-z58" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Ntd-Pl-tTw"/>
+                <constraint firstAttribute="trailing" secondItem="QON-EY-nyQ" secondAttribute="trailing" constant="20" id="OgH-0i-APk"/>
+                <constraint firstItem="lrj-4C-wKx" firstAttribute="width" secondItem="QON-EY-nyQ" secondAttribute="width" id="b7w-Xe-wE1"/>
+                <constraint firstAttribute="trailing" secondItem="nOp-Jx-z58" secondAttribute="trailing" id="d17-Bj-ZWH"/>
+                <constraint firstItem="lrj-4C-wKx" firstAttribute="centerY" secondItem="QON-EY-nyQ" secondAttribute="centerY" id="lfh-fu-G21"/>
+                <constraint firstItem="lrj-4C-wKx" firstAttribute="top" secondItem="nOp-Jx-z58" secondAttribute="bottom" constant="10" id="yXp-1w-WOY"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+        </view>
+    </objects>
+</document>

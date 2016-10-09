@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="STTeacherChooseViewController">
+            <connections>
+                <outlet property="allstudentButton" destination="67i-W5-ai5" id="8pR-oB-Foe"/>
+                <outlet property="tableView" destination="Hv3-YW-4p9" id="NIi-2g-Bc1"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="wishStudentButton" destination="yW5-a7-6Un" id="6oX-h9-Xst"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Hv3-YW-4p9">
+                    <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="separatorColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="yk8-oZ-nXL"/>
+                        <outlet property="delegate" destination="-1" id="DPU-71-lge"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="67i-W5-ai5">
+                    <rect key="frame" x="0.0" y="64" width="160" height="44"/>
+                    <color key="backgroundColor" red="0.97647058819999999" green="0.74509803919999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="54w-BT-PJc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="全部学生">
+                        <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="allStudentAction:" destination="-1" eventType="touchUpInside" id="ieW-fX-DQn"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yW5-a7-6Un">
+                    <rect key="frame" x="160" y="64" width="160" height="44"/>
+                    <color key="backgroundColor" red="0.97647058819999999" green="0.74509803919999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="VLT-6I-2pT"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="志愿学生">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="wishStudentAction:" destination="-1" eventType="touchUpInside" id="RET-Ni-i87"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="yW5-a7-6Un" secondAttribute="trailing" id="13O-cv-M1M"/>
+                <constraint firstItem="yW5-a7-6Un" firstAttribute="leading" secondItem="67i-W5-ai5" secondAttribute="trailing" id="1Rb-FD-kvf"/>
+                <constraint firstAttribute="bottom" secondItem="Hv3-YW-4p9" secondAttribute="bottom" id="D1m-rv-QcQ"/>
+                <constraint firstItem="yW5-a7-6Un" firstAttribute="centerY" secondItem="67i-W5-ai5" secondAttribute="centerY" id="InG-2s-i0W"/>
+                <constraint firstAttribute="trailing" secondItem="Hv3-YW-4p9" secondAttribute="trailing" id="W1B-mI-uvE"/>
+                <constraint firstItem="67i-W5-ai5" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="aKc-BS-kaR"/>
+                <constraint firstItem="67i-W5-ai5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="cir-L2-LaD"/>
+                <constraint firstItem="Hv3-YW-4p9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="44" id="fEP-Zm-WBb"/>
+                <constraint firstItem="yW5-a7-6Un" firstAttribute="width" secondItem="67i-W5-ai5" secondAttribute="width" id="iXs-5h-RJs"/>
+                <constraint firstItem="Hv3-YW-4p9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="uyZ-iP-ndC"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="295" y="396"/>
+        </view>
+    </objects>
+</document>

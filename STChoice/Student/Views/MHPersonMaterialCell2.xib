@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="person_material_cell2" id="1e5-rZ-tif">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1e5-rZ-tif" id="3HG-Pe-Ol9">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="个性签名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TVK-61-hdI">
+                        <rect key="frame" x="15" y="12" width="60" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="gMc-f4-qwN"/>
+                            <constraint firstAttribute="height" constant="20" id="mRG-Km-WQd"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="让我好好详细那个对你说些什么" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j0P-DW-tbu">
+                        <rect key="frame" x="95" y="14" width="196" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="j0P-DW-tbu" firstAttribute="centerY" secondItem="TVK-61-hdI" secondAttribute="centerY" id="8UZ-sj-oMF"/>
+                    <constraint firstItem="j0P-DW-tbu" firstAttribute="leading" secondItem="TVK-61-hdI" secondAttribute="trailing" constant="20" id="cQU-Kt-cUe"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="j0P-DW-tbu" secondAttribute="trailing" constant="15" id="pfS-bW-aKH"/>
+                    <constraint firstItem="TVK-61-hdI" firstAttribute="centerY" secondItem="3HG-Pe-Ol9" secondAttribute="centerY" id="qPI-Xl-jQ0"/>
+                    <constraint firstItem="TVK-61-hdI" firstAttribute="leading" secondItem="3HG-Pe-Ol9" secondAttribute="leading" constant="15" id="uqY-bo-sGv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="544" y="341"/>
+        </tableViewCell>
+    </objects>
+</document>
